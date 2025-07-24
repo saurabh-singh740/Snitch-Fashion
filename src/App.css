@@ -1,0 +1,4 @@
+/* in App.css or tailwind config */
+.perspective-3d {
+  perspective: 1000px;
+}
