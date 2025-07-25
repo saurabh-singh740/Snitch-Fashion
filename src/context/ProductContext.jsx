@@ -2,10 +2,12 @@
 import React, { createContext, useContext, useState } from "react";
 import ProductData from './ProductData' // default export correctly used
 
-const ProductContext = createContext();
+const ProductContext = createContext(null);
+export const useProduct = () => useContext(ProductContext);
 
 export const ProductProvider = ({ children }) => {
-  const [products] = useState(ProductData); // Ensure it's an array
+  const [products , setProducts] = useState(ProductData); // Ensure it's an array
+  console.log(products)
 
   return (
     <ProductContext.Provider value={{ products }}>
@@ -14,4 +16,3 @@ export const ProductProvider = ({ children }) => {
   );
 };
 
-export const useProduct = () => useContext(ProductContext);

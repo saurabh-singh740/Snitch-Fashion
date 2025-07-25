@@ -1,5 +1,5 @@
 import React from "react";
-import ProductData from "../context/ProductData";
+import ProductData from "../context/Productdata";
 
 const ShopPage = () => {
   return (
