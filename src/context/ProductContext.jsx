@@ -5,7 +5,7 @@ import ProductData from './ProductData' // default export correctly used
 const ProductContext = createContext();
 
 export const ProductProvider = ({ children }) => {
-  const [products] = useState(productData); // Ensure it's an array
+  const [products] = useState(ProductData); // Ensure it's an array
 
   return (
     <ProductContext.Provider value={{ products }}>
