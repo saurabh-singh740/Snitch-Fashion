@@ -1,6 +1,6 @@
 // src/context/ProductContext.jsx
 import React, { createContext, useContext, useState } from "react";
-import productData from "./Productdata"; // default export correctly used
+import productData from "./ProductData"; // default export correctly used
 
 const ProductContext = createContext();
 
